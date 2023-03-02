@@ -164,3 +164,97 @@
 // } else {
 //     console.log(`Siz pensiya yoshidasiz pensiyani olib nevaralarizga ham berib turing`)
 // }
+
+// Dars vatidagi amaliyot 1.1
+// const number = +prompt('Son kiriting.');
+// switch (number) {
+//     case 1:
+//         console.log('Dushanba');
+//         break;
+//     case 2:
+//         console.log('Seshanba');
+//         break;
+//     case 3:
+//         console.log('Chorshanba');
+//         break;
+//     case 4:
+//         console.log('Payshanba');
+//         break;
+//     case 5:
+//         console.log('Juma');
+//         break;
+//     case 6:
+//         console.log('Shanba');
+//         break;
+//     case 7:
+//         console.log('Yakshanba');
+//         break;
+//     default:
+//         console.log('Iltimos son kiriting.')
+//         break;
+// }
+
+// 1.2
+// const population = +prompt('Iltimos aholi sonini kiriting');
+// const user = population > 34.23 ? 'O`zbekiston aholisi o`rtachadan yuqori' : 'O`zbekiston aholisi o`rtachadan past';
+// console.log(user);
+
+
+// 1.3
+// function checkNumber(params) {
+//     if (params % 2 === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(checkNumber(10))
+
+// 1.4
+// const num = +prompt('son kiriting');
+// function mathKub(a) {
+//     return Math.pow(a, 3)
+// }
+// console.log(mathKub(num));
+
+// 1.5
+// function main(a, b, c) {
+// return `son1 ${Math.pow(a,a)} son2 ${Math.pow(b,b)} son3 ${Math.pow (c,c)}`
+// }
+// console.log(main(2, 3, 4))
+
+// 1.6
+// const num = +prompt('son kiriting');
+
+// function main(a, b, c) {
+//     return `son1 ${Math.pow(num,a)} son2 ${Math.pow(num,b)} son3 ${Math.pow (num,c)}`
+// }
+// console.log(main(2, 3, 4))
+
+// Uyga Vazifa 1.1
+// const calcAvg = (attepmt1, attepmt2, attepmt3) => {
+//     return (attepmt1 + attepmt2 + attepmt3) / 3;
+// }
+// const team1 = Math.round(calcAvg(90, 80, 170));
+// const team2 = Math.round(calcAvg(90, 88, 200));
+
+// const winnerFun = function(team1, team2) {
+//     if (team1 > team2) {
+//         return (`birinchi jamoa golip ${team1}`);
+//     } else if (team1 === team2) {
+//         return (`ikkala jamoa teng ${team1} va ${team2}`);
+//     } else {
+//         return (`ikkinchi jamoa golip ${team2}`);
+//     }
+// }
+// console.log(winnerFun(team1, team2));
+
+// 1.2
+// const totalStudents = 2500;
+
+// const checkPercentageOfStudents = function(number) {
+//     const checkStudent = number / totalStudents * 100
+//     return `${checkStudent.toFixed(2)}%`
+// }
+
+// console.log(checkPercentageOfStudents(100));
