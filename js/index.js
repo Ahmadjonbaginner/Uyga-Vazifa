@@ -258,3 +258,84 @@
 // }
 
 // console.log(checkPercentageOfStudents(100));
+
+// Dars vatidagi amaliyot 1.1 30-Dars
+
+// const btn = document.querySelector('.box__btn');
+// const box1 = document.querySelector('.box1');
+// const btn1 = document.querySelector('.box1__btn1');
+
+// btn1.addEventListener('click', function() {
+//     box1.classList.toggle('extra-box');
+// })
+
+// btn.addEventListener('click', function() {
+//     box1.classList.toggle('extra-box')
+// })
+
+// 1.2
+
+// const incE1 = document.getElementById('inc');
+// const decE2 = document.getElementById('dec');
+// const multiE3 = document.getElementById('multi');
+// const devgenE4 = document.getElementById('devgen');
+// incE1.addEventListener('click', () => {
+//     let son1 = +prompt('son krit')
+//     let son2 = +prompt('son krit')
+
+//     function inc(a, b) {
+//         return a + b
+//     }
+//     alert(inc(son1, son2))
+// })
+// decE2.addEventListener('click', () => {
+//     let son1 = +prompt('son krit')
+//     let son2 = +prompt('son krit')
+
+//     function dec(a, b) {
+//         return a - b
+//     }
+//     alert(dec(son1, son2))
+// })
+// multiE3.addEventListener('click', () => {
+//     let son1 = +prompt('son krit')
+//     let son2 = +prompt('son krit')
+
+//     function multi(a, b) {
+//         return a * b
+//     }
+//     alert(multi(son1, son2))
+// })
+// devgenE4.addEventListener('click', () => {
+//     let son1 = +prompt('son krit')
+//     let son2 = +prompt('son krit')
+
+//     function devgen(a, b) {
+//         return a / b
+//     }
+//     alert(devgen(son1, son2))
+// })
+
+// Uyga Vazifa 1.1
+
+// const hamburgerBtn = document.querySelector('.navbar__hamburger-bar');
+// const mobileMenus = document.querySelector('.navbar__menus')
+
+// hamburgerBtn.addEventListener('click', function() {
+//     mobileMenus.classList.toggle('extra-nav')
+// })
+
+// 1.2
+// const accordionBox1 = document.querySelector('.multiple1');
+// const accordionBox2 = document.querySelector('.multiple2');
+// const btnArrow1 = document.querySelector('.item1__arrow');
+// const btnArrow2 = document.querySelector('.item2__arrow');
+
+// btnArrow1.addEventListener('click', function() {
+//     btnArrow1.classList.toggle('check-arrow1');
+//     accordionBox1.classList.toggle('extra-multiple1');
+// })
+// btnArrow2.addEventListener('click', function() {
+//     btnArrow2.classList.toggle('check-arrow2');
+//     accordionBox2.classList.toggle('extra-multiple2');
+// })
