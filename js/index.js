@@ -339,3 +339,113 @@
 //     btnArrow2.classList.toggle('check-arrow2');
 //     accordionBox2.classList.toggle('extra-multiple2');
 // })
+
+// 31-dars uyga vazifa 1.1
+
+// const inputSumma = document.querySelector('.input-summa'),
+//     selectKurs = document.querySelector('.select-kurs'),
+//     euro = document.querySelector('.euro'),
+//     dollar = document.querySelector('.dollar'),
+//     btn = document.querySelector('.btn'),
+//     box = document.querySelector('.box');
+
+// btn.addEventListener('click', () => {
+//     if (selectKurs.value === dollar.value) {
+//         box.innerText = `Dollar ${(inputSumma.value / 11500).toFixed(2)}`
+//     } else if (selectKurs.value === euro.value) {
+//         box.innerText = `Euro ${(inputSumma.value / 12500).toFixed(2)}`
+//     } else {
+//         box.innerText = 'xato'
+//     }
+// })
+
+// 1.2
+
+// const form = document.querySelector('.form'),
+//     formName = document.querySelector('.form__name'),
+//     formRelation = document.querySelector('.form__relation'),
+//     formNumber = document.querySelector('.form__number'),
+//     formPassword = document.querySelector('.form__password'),
+//     confirmPassword = document.querySelector('.confirm__password'),
+//     formBtn = document.querySelector('.form__btn'),
+//     formSpan = document.querySelectorAll('.form__span'),
+//     title = document.querySelectorAll('.title');
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     if (!formName.value) {
+//         formSpan[0].textContent = 'Iltimos namega ma`lumot kiriting';
+//         formName.classList.add('error__input');
+//     } else {
+//         formSpan[0].textContent = '';
+//         formName.classList.remove('error__input');
+//     }
+//     if (!formRelation.value) {
+//         formSpan[1].textContent = 'Iltimos relationga ma`lumot kiriting';
+//         formRelation.classList.add('error__input');
+//     } else {
+//         formSpan[1].textContent = '';
+//         formRelation.classList.remove('error__input');
+//     }
+//     if (!formNumber.value) {
+//         formSpan[2].textContent = 'Iltimos numberga ma`lumot kiriting';
+//         formNumber.classList.add('error__input');
+//     } else if (!validatePhoneNumber(formNumber.value)) {
+//         formSpan[2].textContent = 'Number formati notogri';
+//         formNumber.classList.add('error__input');
+//     } else {
+//         formSpan[2].textContent = '';
+//         formNumber.classList.remove('error__input');
+//     }
+//     if (confirmPassword.value !== formPassword.value) {
+//         formSpan[3].textContent = 'Parol mos kelmadi';
+//         confirmPassword.classList.add('error__input');
+//     } else {
+//         formSpan[3].textContent = '';
+//         confirmPassword.classList.remove('error__input');
+//         confirmPassword.classList.add('success');
+//     }
+
+//     title[0].textContent = `Name: ${formName.value}`;
+//     title[1].textContent = `Relation: ${formRelation.value}`;
+//     title[2].textContent = `Number: ${formNumber.value}`;
+// });
+
+// function validatePhoneNumber(phoneNumber) {
+//     const pattern = /^\d{3}-\d{3}-\d{4}$/;
+//     return pattern.test(phoneNumber);
+// }
+
+
+
+// 32-Dars 1.1
+
+// const myFun = function(num) {
+//     if (50 <= num && num >= 300) {
+//         return num * 0.15
+//     } else {
+//         return num * 0.3
+//     }
+// }
+// const myArry = [125, 155, 400];
+
+// console.log(myFun(myArry[1]));
+// console.log(myFun(myArry[2]));
+
+// 1.2
+
+// const myArry = [1999, 1900, 2005, 2010];
+
+// const myFun = function(year) {
+//     if (2000 <= year) {
+//         return 'Siz 21-asrda tug`ulgansiz'
+//     } else {
+//         return 'Siz 20-asirda tugulgansiz'
+//     }
+// }
+
+// console.log(myFun(myArry[0]))
+// console.log(myFun(myArry[3]))
+// console.log(myFun(myArry[2]))
+// console.log(myFun(myArry[1]))

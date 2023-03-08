@@ -215,3 +215,46 @@ button {
     background-color: #fff;
     padding: 15px 25px;
 } */
+
+
+/* .form {
+    display: flex;
+}
+
+.span-summa,
+.span-kurs {
+    display: block;
+} */
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+input,
+.form__btn {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.form__span {
+    color: red;
+}
+
+.form__btn {
+    background-color: greenyellow;
+    border: none;
+}
+
+.error__input {
+    border: 1px solid red;
+}
+
+.success {
+    border: 1px solid greenyellow;
+}
