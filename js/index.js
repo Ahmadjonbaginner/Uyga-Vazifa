@@ -339,3 +339,29 @@
 //     btnArrow2.classList.toggle('check-arrow2');
 //     accordionBox2.classList.toggle('extra-multiple2');
 // })
+
+// 32-Dars uyga vazifa 1.1
+
+// const years = [1985, 1995, 2000, 2004, 1950];
+
+// const birthYear = function(year) {
+//     return (2023 - year)
+// }
+
+// for (let i = 0; i < years.length; i++) {
+//     console.log(birthYear(years[i]));
+
+// }
+
+// 1.2
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const incFun = function(num) {
+//     return (2 * num)
+// }
+
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(incFun(numbers[i]));
+
+// }
