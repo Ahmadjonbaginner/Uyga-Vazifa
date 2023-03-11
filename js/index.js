@@ -64,7 +64,7 @@
 // }
 
 // 1.3
-// const amount = +prompt('Iltimos sizda qancha miqdorda mulingiz borlihini kiriting somda');
+// const amount = +prompt('Iltimos sizda qancha miqdorda pulingiz borlihini kiriting somda');
 // let amount1 = 9690000;
 // if (amount >= amount1) {
 //     console.log(`Oq yo’l, Alisher!`);
@@ -345,7 +345,7 @@
 // const years = [1985, 1995, 2000, 2004, 1950];
 
 // const birthYear = function(year) {
-//     return (2023 - year)
+//     return 2023 - year
 // }
 
 // for (let i = 0; i < years.length; i++) {
@@ -365,3 +365,86 @@
 //     console.log(incFun(numbers[i]));
 
 // }
+
+// 33-Dars amaliyot
+
+// const myString = 'Ahmadjon';
+
+// const myArray = myString.split('')
+
+// const myReverStr = myArray.reverse();
+
+// console.log(myReverStr.join(''));
+
+// const inpName = document.querySelector('.inputName'),
+//     btn = document.querySelector('.btn'),
+//     span = document.querySelector('span');
+
+// btn.addEventListener('click', () => {
+//     const
+// })
+
+// 1.2
+
+// let myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let totol = 0;
+
+// for (let i = 0; i < myNum.length; i++) {
+//     const num = myNum[i];
+//     totol += num
+// }
+// console.log(totol);
+
+// Uyga vazifa 1.1
+
+const calcTimeTravel = function(distantce) {
+    const wolkingSpeed = 3.6;
+    const bicySpeed = 20.1;
+    const carSpeed = 70;
+    const planeSpeed = 800;
+
+    const wolkingTime = (distantce / wolkingSpeed).toFixed(1)
+    const bicyTime = (distantce / bicySpeed).toFixed(1)
+    const carTime = (distantce / carSpeed).toFixed(1)
+    const planeTime = (distantce / planeSpeed).toFixed(1)
+
+    return {
+        onFoot: wolkingTime,
+        onBicycle: bicyTime,
+        onCar: carTime,
+        onPlane: planeTime
+    }
+}
+
+const formDistance = document.querySelector('.form__distance'),
+    formCalculate = document.querySelector('.form__calculate'),
+    footHours = document.querySelector('.foot-hours'),
+    bicyHours = document.querySelector('.bicy-hours'),
+    carHours = document.querySelector('.car-hours'),
+    planeHours = document.querySelector('.plane-hours')
+
+formCalculate.addEventListener('click', () => {
+
+    const travel = calcTimeTravel(formDistance.value)
+
+    footHours.textContent = `${travel.onFoot}hours`
+    bicyHours.textContent = `${travel.onBicycle}hours`
+    carHours.textContent = `${travel.onCar}hours`
+    planeHours.textContent = `${travel.onPlane}hours`
+
+})
+
+// 1.2
+
+const calcTemperatur = function(tepmerature) {
+    return ((tepmerature * 9 / 5) + 32)
+}
+
+const formTemperature = document.querySelector('.form-temperature'),
+    spanTemperature = document.querySelector('.span-temperature'),
+    convertBtn = document.querySelector('.convert-btn')
+
+convertBtn.addEventListener('click', () => {
+    const heat = calcTemperatur(formTemperature.value)
+    spanTemperature.textContent = `Temperature in Calcius ${heat} F`
+})

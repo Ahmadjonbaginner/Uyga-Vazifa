@@ -215,3 +215,108 @@ button {
     background-color: #fff;
     padding: 15px 25px;
 } */
+
+
+/* 33-dars uyga vazifa css */
+
+.block,
+.block2 {
+    padding-top: 50px;
+}
+
+.form__title {
+    text-align: center;
+}
+
+.form__label-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    padding-top: 15px;
+}
+
+.form__label,
+.form-label2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form__distance {
+    padding: 5px;
+    border: 1px solid grey;
+    margin-left: 15px;
+}
+
+.form__calculate {
+    padding: 5px;
+    background-color: rgb(26, 208, 208);
+    border: 1px solid rgb(26, 208, 208);
+    color: #fff;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.on-foot,
+.on-bicycle,
+.on-car,
+.on-plane {
+    width: 220px;
+    height: 160px;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 15px;
+}
+
+.icon,
+.text,
+.n-hours {
+    display: block;
+}
+
+.text {
+    font-size: 17px;
+    color: gray;
+    margin: 15px 0;
+}
+
+.n-hours {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* 1.2 */
+
+.temperature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 20px;
+}
+
+.span-temperature {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+
+.convert-btn {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: rgb(62, 115, 228);
+    border: none;
+}
+
+.form__calculate,
+.convert-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
