@@ -397,54 +397,97 @@
 
 // Uyga vazifa 1.1
 
-const calcTimeTravel = function(distantce) {
-    const wolkingSpeed = 3.6;
-    const bicySpeed = 20.1;
-    const carSpeed = 70;
-    const planeSpeed = 800;
+// const calcTimeTravel = function(distantce) {
+//     const wolkingSpeed = 3.6;
+//     const bicySpeed = 20.1;
+//     const carSpeed = 70;
+//     const planeSpeed = 800;
 
-    const wolkingTime = (distantce / wolkingSpeed).toFixed(1)
-    const bicyTime = (distantce / bicySpeed).toFixed(1)
-    const carTime = (distantce / carSpeed).toFixed(1)
-    const planeTime = (distantce / planeSpeed).toFixed(1)
+//     const wolkingTime = (distantce / wolkingSpeed).toFixed(1)
+//     const bicyTime = (distantce / bicySpeed).toFixed(1)
+//     const carTime = (distantce / carSpeed).toFixed(1)
+//     const planeTime = (distantce / planeSpeed).toFixed(1)
 
-    return {
-        onFoot: wolkingTime,
-        onBicycle: bicyTime,
-        onCar: carTime,
-        onPlane: planeTime
-    }
-}
+//     return {
+//         onFoot: wolkingTime,
+//         onBicycle: bicyTime,
+//         onCar: carTime,
+//         onPlane: planeTime
+//     }
+// }
 
-const formDistance = document.querySelector('.form__distance'),
-    formCalculate = document.querySelector('.form__calculate'),
-    footHours = document.querySelector('.foot-hours'),
-    bicyHours = document.querySelector('.bicy-hours'),
-    carHours = document.querySelector('.car-hours'),
-    planeHours = document.querySelector('.plane-hours')
+// const formDistance = document.querySelector('.form__distance'),
+//     formCalculate = document.querySelector('.form__calculate'),
+//     footHours = document.querySelector('.foot-hours'),
+//     bicyHours = document.querySelector('.bicy-hours'),
+//     carHours = document.querySelector('.car-hours'),
+//     planeHours = document.querySelector('.plane-hours')
 
-formCalculate.addEventListener('click', () => {
+// formCalculate.addEventListener('click', () => {
 
-    const travel = calcTimeTravel(formDistance.value)
+//     const travel = calcTimeTravel(formDistance.value)
 
-    footHours.textContent = `${travel.onFoot}hours`
-    bicyHours.textContent = `${travel.onBicycle}hours`
-    carHours.textContent = `${travel.onCar}hours`
-    planeHours.textContent = `${travel.onPlane}hours`
+//     footHours.textContent = `${travel.onFoot}hours`
+//     bicyHours.textContent = `${travel.onBicycle}hours`
+//     carHours.textContent = `${travel.onCar}hours`
+//     planeHours.textContent = `${travel.onPlane}hours`
 
-})
+// })
 
-// 1.2
+// // 1.2
 
-const calcTemperatur = function(tepmerature) {
-    return ((tepmerature * 9 / 5) + 32)
-}
+// const calcTemperatur = function(tepmerature) {
+//     return ((tepmerature * 9 / 5) + 32)
+// }
 
-const formTemperature = document.querySelector('.form-temperature'),
-    spanTemperature = document.querySelector('.span-temperature'),
-    convertBtn = document.querySelector('.convert-btn')
+// const formTemperature = document.querySelector('.form-temperature'),
+//     spanTemperature = document.querySelector('.span-temperature'),
+//     convertBtn = document.querySelector('.convert-btn')
 
-convertBtn.addEventListener('click', () => {
-    const heat = calcTemperatur(formTemperature.value)
-    spanTemperature.textContent = `Temperature in Calcius ${heat} F`
-})
+// convertBtn.addEventListener('click', () => {
+//     const heat = calcTemperatur(formTemperature.value)
+//     spanTemperature.textContent = `Temperature in Calcius ${heat} F`
+// })
+
+// 34-Dars uyga vazifa
+
+// const form = document.querySelector('.form'),
+//     formName = document.querySelector('.form__name'),
+//     formRelation = document.querySelector('.form__relation'),
+//     formTel = document.querySelector('.form__tel'),
+//     formBtn = document.querySelector('.form__btn'),
+//     box = document.querySelector('.box');
+// let dalete = 'dalete';
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     const contact = document.createElement('div');
+//     contact.classList.add('contact');
+
+//     const removeBtn = document.createElement('button')
+//     removeBtn.classList.add('remove__btn')
+//     removeBtn.textContent = dalete
+
+//     nameSpan = document.createElement('span');
+//     nameSpan.textContent = formName.value;
+//     contact.appendChild(nameSpan);
+
+//     relationSpan = document.createElement('span');
+//     relationSpan.textContent = formRelation.value;
+//     contact.appendChild(relationSpan);
+
+//     telSpan = document.createElement('span');
+//     telSpan.classList.add('tel__span')
+//     telSpan.textContent = formTel.value;
+//     contact.appendChild(telSpan);
+
+//     contact.appendChild(removeBtn);
+//     box.appendChild(contact);
+
+//     removeBtn.addEventListener('click', () => {
+//         box.removeChild(contact)
+//     })
+
+//     form.reset();
+// })
